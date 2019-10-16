@@ -1,0 +1,94 @@
+Retrieving logs for app pcc-nc10 in org pivot-jaxu / space playground as jaxu@pivotal.io...
+
+   2019-06-10T16:54:02.64+0900 [API/1] OUT Created app with guid 596fb84b-aa7d-486f-b27a-98600a256e59
+   2019-06-10T16:54:06.71+0900 [API/1] OUT Uploading bits for app with guid 596fb84b-aa7d-486f-b27a-98600a256e59
+   2019-06-10T16:54:19.70+0900 [API/3] OUT Creating build for app with guid 596fb84b-aa7d-486f-b27a-98600a256e59
+   2019-06-10T16:54:20.20+0900 [API/3] OUT Updated app with guid 596fb84b-aa7d-486f-b27a-98600a256e59 ({"state"=>"STARTED"})
+   2019-06-10T16:54:20.21+0900 [STG/0] OUT Downloading binary_buildpack...
+   2019-06-10T16:54:20.21+0900 [STG/0] OUT Downloaded binary_buildpack
+   2019-06-10T16:54:20.21+0900 [STG/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 creating container for instance 5061ee84-c4c9-4652-b596-f7f715619c40
+   2019-06-10T16:54:21.55+0900 [STG/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully created container for instance 5061ee84-c4c9-4652-b596-f7f715619c40
+   2019-06-10T16:54:22.12+0900 [STG/0] OUT Downloading app package...
+   2019-06-10T16:54:22.49+0900 [STG/0] OUT Downloaded app package (3.1M)
+   2019-06-10T16:54:22.67+0900 [STG/0] OUT -----> Binary Buildpack version 1.0.32
+   2019-06-10T16:54:24.57+0900 [STG/0] OUT Uploading droplet...
+   2019-06-10T16:54:24.57+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-06-10T16:54:24.57+0900 [STG/0] OUT Uploading build artifacts cache...
+   2019-06-10T16:54:24.57+0900 [STG/0] OUT Exit status 0
+   2019-06-10T16:54:24.72+0900 [STG/0] OUT Uploaded build artifacts cache (192B)
+   2019-06-10T16:54:24.81+0900 [API/4] OUT Creating droplet for app with guid 596fb84b-aa7d-486f-b27a-98600a256e59
+   2019-06-10T16:54:25.87+0900 [STG/0] OUT Uploaded droplet (3.1M)
+   2019-06-10T16:54:25.87+0900 [STG/0] OUT Uploading complete
+   2019-06-10T16:54:26.10+0900 [STG/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 stopping instance 5061ee84-c4c9-4652-b596-f7f715619c40
+   2019-06-10T16:54:26.10+0900 [STG/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 destroying container for instance 5061ee84-c4c9-4652-b596-f7f715619c40
+   2019-06-10T16:54:26.38+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e creating container for instance 7633750f-86d0-4f33-46ae-1341
+   2019-06-10T16:54:26.74+0900 [STG/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully destroyed container for instance 5061ee84-c4c9-4652-b596-f7f715619c40
+   2019-06-10T16:54:27.91+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e successfully created container for instance 7633750f-86d0-4f33-46ae-1341
+   2019-06-10T16:54:28.49+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T16:54:28.74+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T16:54:29.85+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T16:54:52.09+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e destroying container for instance 7633750f-86d0-4f33-46ae-1341
+   2019-06-10T16:54:52.09+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e stopping instance 7633750f-86d0-4f33-46ae-1341
+   2019-06-10T16:54:52.09+0900 [API/0] OUT Process has crashed with type: "web"
+   2019-06-10T16:54:52.10+0900 [API/0] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"7633750f-86d0-4f33-46ae-1341", "index"=>0, "cell_id"=>"46e9ddd3-8e93-436c-aafc-34774f1c665e", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>1, "crash_timestamp"=>1560153292070906169, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T16:54:52.15+0900 [CELL/0] OUT Cell f65688d9-047a-4020-91cf-ab5f9c95dd18 creating container for instance eebd6975-aee4-4edd-4cac-50b2
+   2019-06-10T16:54:52.96+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e successfully destroyed container for instance 7633750f-86d0-4f33-46ae-1341
+   2019-06-10T16:54:53.66+0900 [CELL/0] OUT Cell f65688d9-047a-4020-91cf-ab5f9c95dd18 successfully created container for instance eebd6975-aee4-4edd-4cac-50b2
+   2019-06-10T16:54:54.31+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T16:54:54.55+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T16:54:55.65+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T16:55:17.90+0900 [API/3] OUT Process has crashed with type: "web"
+   2019-06-10T16:55:17.90+0900 [CELL/0] OUT Cell f65688d9-047a-4020-91cf-ab5f9c95dd18 stopping instance eebd6975-aee4-4edd-4cac-50b2
+   2019-06-10T16:55:17.90+0900 [CELL/0] OUT Cell f65688d9-047a-4020-91cf-ab5f9c95dd18 destroying container for instance eebd6975-aee4-4edd-4cac-50b2
+   2019-06-10T16:55:17.91+0900 [API/3] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"eebd6975-aee4-4edd-4cac-50b2", "index"=>0, "cell_id"=>"f65688d9-047a-4020-91cf-ab5f9c95dd18", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>2, "crash_timestamp"=>1560153317885577855, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T16:55:17.96+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 creating container for instance ade7067b-aba3-405e-76b1-adaa
+   2019-06-10T16:55:18.80+0900 [CELL/0] OUT Cell f65688d9-047a-4020-91cf-ab5f9c95dd18 successfully destroyed container for instance eebd6975-aee4-4edd-4cac-50b2
+   2019-06-10T16:55:19.44+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully created container for instance ade7067b-aba3-405e-76b1-adaa
+   2019-06-10T16:55:20.16+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T16:55:20.41+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T16:55:21.52+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T16:55:44.04+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 destroying container for instance ade7067b-aba3-405e-76b1-adaa
+   2019-06-10T16:55:44.04+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 stopping instance ade7067b-aba3-405e-76b1-adaa
+   2019-06-10T16:55:44.10+0900 [API/3] OUT Process has crashed with type: "web"
+   2019-06-10T16:55:44.11+0900 [API/3] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"ade7067b-aba3-405e-76b1-adaa", "index"=>0, "cell_id"=>"b8e4aaa7-f146-4777-8702-b3faf909b6c6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>3, "crash_timestamp"=>1560153344027754469, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T16:55:44.84+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully destroyed container for instance ade7067b-aba3-405e-76b1-adaa
+   2019-06-10T16:56:20.77+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e creating container for instance ddd414c8-4916-40ac-5072-e012
+   2019-06-10T16:56:22.24+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e successfully created container for instance ddd414c8-4916-40ac-5072-e012
+   2019-06-10T16:56:22.64+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T16:56:22.90+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T16:56:24.00+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T16:56:46.23+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e destroying container for instance ddd414c8-4916-40ac-5072-e012
+   2019-06-10T16:56:46.23+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e stopping instance ddd414c8-4916-40ac-5072-e012
+   2019-06-10T16:56:46.26+0900 [API/0] OUT Process has crashed with type: "web"
+   2019-06-10T16:56:46.26+0900 [API/0] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"ddd414c8-4916-40ac-5072-e012", "index"=>0, "cell_id"=>"46e9ddd3-8e93-436c-aafc-34774f1c665e", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>4, "crash_timestamp"=>1560153406237686979, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T16:56:47.14+0900 [CELL/0] OUT Cell 46e9ddd3-8e93-436c-aafc-34774f1c665e successfully destroyed container for instance ddd414c8-4916-40ac-5072-e012
+   2019-06-10T16:57:51.43+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 creating container for instance 2038a405-c6ca-4068-5682-045b
+   2019-06-10T16:57:52.94+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully created container for instance 2038a405-c6ca-4068-5682-045b
+   2019-06-10T16:57:53.79+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T16:57:54.03+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T16:57:55.14+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T16:58:17.44+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 destroying container for instance 2038a405-c6ca-4068-5682-045b
+   2019-06-10T16:58:17.44+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 stopping instance 2038a405-c6ca-4068-5682-045b
+   2019-06-10T16:58:17.48+0900 [API/1] OUT Process has crashed with type: "web"
+   2019-06-10T16:58:17.54+0900 [API/1] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"2038a405-c6ca-4068-5682-045b", "index"=>0, "cell_id"=>"b8e4aaa7-f146-4777-8702-b3faf909b6c6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>5, "crash_timestamp"=>1560153497446883603, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T16:58:18.26+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully destroyed container for instance 2038a405-c6ca-4068-5682-045b
+   2019-06-10T17:00:22.43+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 creating container for instance fcd96e23-eeda-4bed-7019-405b
+   2019-06-10T17:00:23.92+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully created container for instance fcd96e23-eeda-4bed-7019-405b
+   2019-06-10T17:00:24.63+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T17:00:24.87+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T17:00:25.97+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T17:00:48.40+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 destroying container for instance fcd96e23-eeda-4bed-7019-405b
+   2019-06-10T17:00:48.40+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 stopping instance fcd96e23-eeda-4bed-7019-405b
+   2019-06-10T17:00:48.42+0900 [API/1] OUT Process has crashed with type: "web"
+   2019-06-10T17:00:48.43+0900 [API/1] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"fcd96e23-eeda-4bed-7019-405b", "index"=>0, "cell_id"=>"b8e4aaa7-f146-4777-8702-b3faf909b6c6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>6, "crash_timestamp"=>1560153648407729250, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T17:00:49.24+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully destroyed container for instance fcd96e23-eeda-4bed-7019-405b
+   2019-06-10T17:04:54.32+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 creating container for instance 1adf5f12-0a18-4560-7e70-5316
+   2019-06-10T17:04:55.89+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully created container for instance 1adf5f12-0a18-4560-7e70-5316
+   2019-06-10T17:04:56.38+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-06-10T17:04:56.62+0900 [APP/PROC/WEB/0] ERR Error: no start command specified during staging or launch  
+   2019-06-10T17:04:57.74+0900 [APP/PROC/WEB/0] OUT Exit status 1
+   2019-06-10T17:05:20.29+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 destroying container for instance 1adf5f12-0a18-4560-7e70-5316
+   2019-06-10T17:05:20.29+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 stopping instance 1adf5f12-0a18-4560-7e70-5316
+   2019-06-10T17:05:20.32+0900 [API/4] OUT Process has crashed with type: "web"
+   2019-06-10T17:05:20.33+0900 [API/4] OUT App instance exited with guid 596fb84b-aa7d-486f-b27a-98600a256e59 payload: {"instance"=>"1adf5f12-0a18-4560-7e70-5316", "index"=>0, "cell_id"=>"b8e4aaa7-f146-4777-8702-b3faf909b6c6", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1; process did not exit", "crash_count"=>7, "crash_timestamp"=>1560153920294170126, "version"=>"c775c1a6-d71e-418a-b2c0-45b05a5936c8"}
+   2019-06-10T17:05:21.10+0900 [CELL/0] OUT Cell b8e4aaa7-f146-4777-8702-b3faf909b6c6 successfully destroyed container for instance 1adf5f12-0a18-4560-7e70-5316
